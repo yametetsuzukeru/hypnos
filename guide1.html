@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Гайд 1 – Хаябуса</title>
+  <!-- Подключаем шрифт Russo One для заголовков -->
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <style>
+    /* Сброс стилей */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #0d0d0d;
+      font-family: Arial, sans-serif;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    /* Шапка страницы */
+    header {
+      background: url('contact.jpg') no-repeat center center/cover;
+      height: 300px;
+      position: relative;
+      text-align: center;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      font-family: 'Russo One', sans-serif;
+      font-size: 3rem;
+      padding-top: 100px;
+      position: relative;
+      color: #ffd700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    /* Навигационное меню */
+    nav {
+      background-color: #1a1a1a;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff4500;
+    }
+    /* Основной контент */
+    .content {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #1e1e1e;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    .content h2 {
+      font-family: 'Russo One', sans-serif;
+      color: #ffd700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+    .section p, .section ul {
+      margin-bottom: 10px;
+    }
+    .section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    /* Подвал страницы */
+    footer {
+      background-color: #1a1a1a;
+      color: #888;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+    /* Адаптив */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка страницы -->
+  <header>
+    <h1>Хаябуса</h1>
+  </header>
+  
+  <!-- Навигационное меню -->
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="guide1.html">Гайд 1</a>
+    <a href="guide2.html">Гайд 2</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+  
+  <!-- Основной контент -->
+  <div class="content">
+    <h2>Подробный гайд по Хаябусе</h2>
+    <p><strong>Хаябуса</strong> – убийца, который пикается исключительно в лесу. Его основной урон и импакт проявляются ближе к мид-гейму (при получении двух-трех слотов). Это сильный лесник, и в последнее время персонаж вновь пользуется популярностью для банов и пиков.</p>
+    <p>Главное преимущество Хаябусы заключается в его мобильности и уроне, что позволяет осуществлять соло-киллы и устранять вражеских керри (АДК, маг).</p>
+    
+    <div class="section">
+      <h3>Пассивка</h3>
+      <p>Каждая атака Хаябусы накладывает метку (до 4 зарядов).</p>
+    </div>
+    
+    <div class="section">
+      <h3>1 навык – Призрачные сюрикены</h3>
+      <p>При использовании навыка Хаябуса бросает три сюрикена в указанное место, нанося урон и замедляя врагов. С каждым уровнем навыка растёт эффект вампиризма.</p>
+    </div>
+    
+    <div class="section">
+      <h3>2 навык – Четыре тени</h3>
+      <p>Главный атрибут мобильности персонажа. Хаябуса совершает рывок и выпускает четыре тени в разные стороны (на север, на юг, на восток, на запад). При повторном использовании навыка он телепортируется на место выбранной тени и сокращает перезарядку первого навыка.</p>
+    </div>
+    
+    <div class="section">
+      <h3>3 навык – Теневой убийца</h3>
+      <p>Хаябуса испаряется и наносит шесть одиночных атак, приоритет отдаётся врагам, на которых уже наложена метка.</p>
+    </div>
+    
+    <div class="section">
+      <h3>Сборка</h3>
+      <ul>
+        <li><strong>Прочные Сапоги</strong> – Уменьшают воздействие контроля и замедления, позволяя выйти из критических ситуаций.</li>
+        <li><strong>Удар охотника</strong> – Обеспечивает физическое проникновение и сокращение перезарядки; пассивка предмета синергирует с ультой (после нанесения урона одному и тому же противнику 5 раз даёт дополнительную скорость передвижения).</li>
+        <li><strong>Клинок отчаяния</strong> – Существенный прирост физической атаки, позволяющий быстро уничтожать противников с низкой защитой.</li>
+        <li><strong>Бесконечная битва</strong> – Усиливает базовую атаку, сокращает перезарядку, повышает вампиризм и скорость передвижения.</li>
+        <li><strong>Злобный рык</strong> – Предоставляет дополнительное физическое проникновение для устранения танкованных персонажей.</li>
+        <li><strong>Бессмертие, Заморозка, Метеор</strong> – Предметы для выживания, выбираемые в зависимости от ситуации на перезакупе.</li>
+      </ul>
+      <p><strong>Финальная сборка:</strong> Оптимальная сборка включает все перечисленные предметы.</p>
+    </div>
+    
+    <div class="section">
+      <h3>Боевое заклинание</h3>
+      <ul>
+        <li><strong>Возмездие</strong> – Рекомендуется для лесника.</li>
+        <li><strong>Пламенное возмездие</strong> – Добавляет физическую и магическую силу, повышая наносимый урон.</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <h3>Эмблемы</h3>
+      <ul>
+        <li><strong>Эмблемы убийцы</strong> – Обеспечивают физическое проникновение, увеличение атаки и скорость передвижения.</li>
+        <li>Дополнительная физическая атака.</li>
+        <li>Урон по объектам (например, Черепахе, Лорду).</li>
+        <li><strong>Боевой клич</strong> – Увеличивает урон после попадания навыками.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Подвал страницы -->
+  <footer>
+    <p>© 2025 Mobile Legends Гайды. Все права защищены.</p>
+  </footer>
+</body>
+</html>
